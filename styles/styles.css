@@ -1,0 +1,282 @@
+/* Colors */
+:root {
+    --black: #000000;
+    --blue: #045cb4;
+    --blue-light: #015dba;
+    --grey: #ebebeb;
+    --white: #ffffff;
+}
+
+.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-fluid, .col, [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+}
+
+.header-logo {
+    align-items: center;
+    background-color: var(--grey);
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: 6rem;
+}
+
+.header-logo__title {
+    font-size: 1.5rem;
+}
+
+.header-chat {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-chat__button {
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    width: 3rem;
+}
+
+.header-chat__title {
+    display: none;
+}
+
+.main-image {
+    background-image: url('../images/bg-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top: 5px solid var(--grey);
+    height: 13rem;
+}
+
+.content {
+    min-height: 785px;
+    position: relative;
+    text-align: center;
+}
+
+.content-box {
+    position: absolute;
+    top: -10%;
+}
+
+.content__title {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content__card {
+    background-color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.content__card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.content__card-description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.content__card-required {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-control {
+    font-size: 0.9rem;
+}
+
+.content__terms {
+    font-size: 0.8rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.custom-control-label {
+    padding-left: 0.5rem;
+}
+
+.custom-control-label::before, .custom-control-label::after {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.form-submit {
+    background-color: var(--blue-light);
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3rem;
+    text-transform: uppercase;
+    width: 10rem;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    height: 5rem;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 576px) {
+    header {
+        height: 6rem;
+    }
+
+    .header-chat__button {
+        height: 3rem;
+        width: 10rem;
+    }
+
+    .header-chat__title {
+        display: block;
+        font-weight: bold;
+        margin-left: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    .main-image {
+        background-image: url('../images/bg.png');
+        height: 19rem;
+    }
+
+    .content-box {
+        top: -15%;
+    }
+
+
+    .content__title {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 7rem;
+    }
+
+    .header-logo {
+        height: 2.5rem;
+        width: 13rem;
+    }
+
+    .header-logo__title {
+        font-size: 1.5rem;
+    }
+
+    .header-chat__button {
+        height: 3rem;
+        width: 11rem;
+    }
+
+    .content {
+        min-height: 775px;
+    }
+
+    .content-box {
+        top: -15%;
+    }
+
+    .content__title {
+        font-size: 4rem;
+    }
+
+    .content__card-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .content__card-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content__card-required {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .content__terms {
+        font-size: 1rem;
+    }
+
+    .footer {
+        height: 8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-chat__button:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .content {
+        min-height: 600px;
+    }
+
+    .content-box {
+        top: -15%;
+    }
+
+    .content__title {
+        font-size: 5rem;
+    }
+
+    .content__card {
+        padding: 2rem 4rem;
+    }
+
+    .content__card-required {
+        margin-left: 3%;
+    }
+
+    .form-group {
+        display: inline-block;
+        width: 45%;
+        margin-right: 2%;
+    }
+
+    .content__terms {
+        margin: 2rem 0 2rem 3%;
+        width: 90%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        height: 8rem;
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    .footer > i {
+        margin-right: 1.5rem;
+    }
+}
